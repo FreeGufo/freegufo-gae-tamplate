@@ -10,10 +10,28 @@
 - vendorには、glideを利用
 
 
+## Golangの設定
+
 ## glideの設定
 
 TODO
 
+
+### GOPATHの設定
+
+プロジェクトルートをGOPATHに設定
+
+Mac
+```
+cd [project_root]
+export GOPATH=`pwd`
+```
+
+PowerShell(Windows)
+```
+cd [project_root]
+$ENV:GOPATH = $(pwd).Path
+```
 
 
 ## Client Library
