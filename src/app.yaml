@@ -12,19 +12,14 @@ handlers:
 #   static_files: static/html/\1
 #   upload: static/html/(.*\.html)
 
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
-  secure: always
+#- url: /favicon\.ico
+#  static_files: favicon.ico
+#  upload: favicon\.ico
+#  secure: always
 
-- url: /robots\.txt
-  static_files: robots.txt
-  upload: robots\.txt
-
-- url: /admin/
-  static_files: static/html/admin/index.html
-  upload: static/html/admin/index.html
-  secure: always
+#- url: /robots\.txt
+#  static_files: robots.txt
+#  upload: robots\.txt
 
 - url: /js
   static_dir: static/js
@@ -46,13 +41,9 @@ handlers:
   static_dir: static/file
   secure: always
 
-- url: /sitemap\.xml
-  static_files: sitemap.xml
-  upload: sitemap\.xml
-
-# - url: /inquiry.html
-#   script: _go_app
-#   secure: always
+#- url: /sitemap\.xml
+#  static_files: sitemap.xml
+#  upload: sitemap\.xml
 
 - url: /.*
   script: _go_app
